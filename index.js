@@ -1,10 +1,18 @@
-var http = require('http')
+const express = require('express')
+const app = express()
+const port = 3000
 
-var requestListener = function (request, response) {
-  console.log('A request came in!!!', request.url)
-  response.end('Hello world?')
-}
+app.use(express.static('public'))
 
-var server = http.createServer(requestListener)
+app.get('/kitties-are-great', (request, response) => {
+  console.log('A page was loaded!', request.url)
+  response.send('Kitties are great!')
+})
 
-server.listen(3000)
+app.listen(
+  port,
+  () => {
+    console.log(`Example app listening on port ${port}!`)
+  }
+)
+
