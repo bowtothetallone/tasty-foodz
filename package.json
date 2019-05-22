@@ -1,0 +1,11 @@
+{
+  "name": "tasty-foodz",
+  "version": "1.0.0",
+  "description": "Foodz of wonder",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "kathy@carlston.tv",
+  "license": "MIT"
+}
