@@ -3,11 +3,160 @@
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
-  background-color: #000;
+  background-color: #576e93;
   color: #fff;
 }
 
-h1 {
-  font-style: italic;
-  color: #373fff;
+* {
+  box-sizing: border-box;
+}
+
+input, textarea {
+  width: 100%;
+}
+
+input {
+  line-height: 2em;
+}
+
+textarea {
+  line-height: 5em;
+}
+
+input[type=submit] {
+  width: 150px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  background-color: #d0d9e8;
+  color: #405d8c;
+}
+
+.header {
+  grid-area: header;
+  background-color: #405d8c;
+  padding: 30px;
+  text-align: center;
+}
+
+.top {
+  padding: 15px;
+  text-align: center;
+}
+
+.middle {
+  margin: 15px 50px 15px 50px;
+}
+
+.bottom {
+  padding: 15px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #405d8c;
+  padding: 10px;
+  text-align: center;
+}
+
+.foodz {
+  display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #405d8c;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(171, 194, 232, 0.5);
+}
+
+/* Caption text */
+.text {
+  color: #405d8c;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  -webkit-text-stroke: 1px #405d8c;
+   text-shadow:
+     -1px -1px 0 #fff,  
+      1px -1px 0 #fff,
+      -1px 1px 0 #fff,
+       1px 1px 0 #fff;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
 }

@@ -4,34 +4,71 @@
     <title>Hello!</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css">
     
     <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
+    <script src="/script.js" defer></script> 
   </head>  
   <body>
-    <h1>All the Foodz to Eat</h1>
     
-    <p>
-      Like foodz? You'll love this!
-    </p>
+    <div class="header">
+        <h1>All the Foodz to Eat</h1>
+    </div>
+    <div class="container">
+        
+  
+        <div class="top">
+            <h2>Like foodz? You'll love this!</h2>
+        </div>
+      
+        <div class="middle"> 
+            <div class="slideshow-container">
+
+                <div class="foodz fade">
+                  <img src="https://cdn.glitch.com/98e771b1-b7f5-41ce-ae5c-1999dddc21a2%2Fpotstickys.jpg">
+                  <div class="text">Potstickers</div>
+                </div>
+
+                <div class="foodz fade">
+                  <img src="https://cdn.glitch.com/98e771b1-b7f5-41ce-ae5c-1999dddc21a2%2Fnoodlydoos.jpg">
+                  <div class="text">Noodlydoos</div>
+                </div>
+
+                <div class="foodz fade">
+                  <img src="https://cdn.glitch.com/98e771b1-b7f5-41ce-ae5c-1999dddc21a2%2Fthewurst.jpg">
+                  <div class="text">Bratwurst</div>
+                </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+                <br>
+
+        </div>
+      
+        <div class="bottom">
+            <form action="/contact" method="post">
+                <div>
+                  <label for="contact-name">Name:</label>
+                  <input name="name" id="contact-name" />
+                </div>
+                <div>
+                  <label for="contact-message">Your Favorite Foodz:</label>
+                  <textarea name="message" id="contact-message"></textarea>
+                </div>
+                <div>
+                  <input type="submit" />
+                </div>
+            </form>
+        </div>
+    </div>
     
-    <form action="/contact" method="post">
-      <div>
-        <label for="contact-name">Name:</label>
-        <input name="name" id="contact-name" />
-      </div>
-      <div>
-        <label for="contact-message">Message:</label>
-        <textarea name="message" id="contact-message"></textarea>
-      </div>
-      <div>
-        <input type="submit" />
-      </div>
-    </form>
+    <footer class="footer">
+        <p>Footerz are Awesome</p>
+    </footer>
 
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
