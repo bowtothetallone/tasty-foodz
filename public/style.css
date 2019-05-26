@@ -1,9 +1,15 @@
 /* CSS files add styling rules to your content */
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  background-color: #576e93;
+  background-color: #6d7c93;
   color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
 * {
@@ -19,11 +25,8 @@ img {
 }
 
 footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    overflow: hidden;
+  flex-shrink: 0;
+  overflow: hidden;
 }
 
 input, textarea {
@@ -49,9 +52,10 @@ input[type=submit] {
 .container {
   max-width: 1000px;
   margin: auto;
-  background-color: #d0d9e8;
+  background-color: #e3ebf9;
   color: #405d8c;
   padding: 2em;
+  flex: 1 0 auto;
 }
 
 .header {
@@ -61,7 +65,7 @@ input[type=submit] {
   text-align: center;
 }
 
-.top {
+h1, h2 {
   text-align: center;
 }
 
